@@ -1,0 +1,14 @@
+package in.amjadit.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Product {
+
+	@Id
+	private int productId;
+	private String productName;
+	private double productPrice;
+
+}

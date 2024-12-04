@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: 29-SpringBoot_Data_JPA__One_To_Many_Relations_App-1
+  datasource:
+    url: jdbc:mysql://localhost:3306/Institue_tbls
+    username: root
+    password: amjadkhan@16
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true

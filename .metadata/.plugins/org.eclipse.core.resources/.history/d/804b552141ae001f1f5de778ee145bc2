@@ -1,0 +1,21 @@
+package in.amjadit;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import in.amjadit.Entity.Address;
+
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
+		
+		Address a1 = new Address();
+		a1.setAddrCity("hyd");
+		a1.setAddrCountry("India");
+		a1.setAddrState("Telangana");
+	}
+
+}

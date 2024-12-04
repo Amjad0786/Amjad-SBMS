@@ -1,0 +1,8 @@
+spring.application.name=31_Web_MVC_App_2
+
+
+
+spring.mvc.view.prefix=/view/
+spring.mvc.view.suffix=.jsp
+
+server.port=8081

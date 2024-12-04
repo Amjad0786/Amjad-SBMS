@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;in.amjadit.meins&apos; to &apos;in.amjadit.main&apos;&#x0D;&#x0A;- Original project: &apos;06_IoC_DI_Autowiring_ByConstructor_App&apos;&#x0D;&#x0A;- Original element: &apos;06_IoC_DI_Autowiring_ByConstructor_App/src/main/java/in.amjadit.meins&apos;&#x0D;&#x0A;- Renamed element: &apos;06_IoC_DI_Autowiring_ByConstructor_App/src/main/java/in.amjadit.main&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;in.amjadit.meins&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.amjadit.meins" name="in.amjadit.main" qualified="false" references="true" stamp="1731827306839" textual="false" version="1.0"/>
+</session>

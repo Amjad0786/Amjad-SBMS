@@ -1,0 +1,5 @@
+package in.amjadit.entity;
+
+public class StudentEntity {
+
+}

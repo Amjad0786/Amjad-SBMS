@@ -1,0 +1,5 @@
+package in.amjadit.controller;
+
+public class UserController {
+
+}

@@ -1,0 +1,8 @@
+package in.amjadit.Entity;
+
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class AccountPK {
+}

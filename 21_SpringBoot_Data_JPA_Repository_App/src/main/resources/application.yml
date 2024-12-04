@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: 21_SpringBoot_Data_JPA_Repository_App
+  
+  datasource:
+    url: jdbc:mysql://localhost:3306/school_dtls
+    username: root
+    password: amjadkhan@16
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    
+  jpa:
+    hibernate:
+     ddl-auto: update
+    
+     show-sql: true
+        
+
+
+

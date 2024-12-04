@@ -1,0 +1,34 @@
+package in.amjadit.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.ui.Model;
+
+import in.amjadit.binding.Student;
+
+public class StudentController {
+	
+	public String loadForm(Model model) {
+		List<String> coureseslist = new ArrayList<>();
+		coureseslist.add("JAVA");
+		coureseslist.add("DevOps");
+		coureseslist.add("AWS");
+		coureseslist.add("Python");
+		
+		
+		List<String> timingslist = new ArrayList<>();
+		timingslist.add("Morning");
+		timingslist.add("AfterNoon");
+		timingslist.add("Evening");
+		
+		Student student = new Student();
+		
+		model.addAttribute("courses", coureseslist);
+		model.addAttribute("timings", timingslist);
+		model.addAttribute("student", student);
+		
+		return "index" ;
+	}
+
+}

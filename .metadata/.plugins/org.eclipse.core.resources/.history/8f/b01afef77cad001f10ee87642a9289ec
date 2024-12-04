@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: 27-SpringBoot_Data_JPA__Composite_Key_App-1

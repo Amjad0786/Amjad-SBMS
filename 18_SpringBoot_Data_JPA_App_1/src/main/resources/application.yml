@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: 18_SpringBoot_Data_JPA_App_1
+  datasource:
+    url: jdbc:mysql://localhost:3306/sbms
+    username: root
+    password: amjadkhan@16
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    
+    show-sql: true

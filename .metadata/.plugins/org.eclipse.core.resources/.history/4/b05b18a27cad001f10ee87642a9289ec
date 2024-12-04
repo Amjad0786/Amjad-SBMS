@@ -1,0 +1,12 @@
+package in.amjadit.Entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Students {
+	
+	private Integer Id;
+	private String name;
+	private Double price;
+
+}

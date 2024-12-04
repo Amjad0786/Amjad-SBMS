@@ -1,0 +1,23 @@
+package in.amjadit.controller;
+
+public class DemoController {
+	
+	
+		@GetMapping("/date")
+	   public ModelAndView getTodayDate() {
+		   
+		   ModelAndView mav = new ModelAndView();
+		   
+		   LocalDate now = LocalDate.now();
+		   
+		   String msgtxt ="Today date is"+ now;
+		   mav.addObject("msg",msgtxt);
+		   mav.setViewName("index");
+		   
+		   return mav;
+		   
+		   
+	   }
+	}
+
+}

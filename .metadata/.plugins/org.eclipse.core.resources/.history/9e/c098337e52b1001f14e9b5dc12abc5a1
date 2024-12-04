@@ -1,0 +1,4 @@
+spring.application.name=31_Web_MVC_App_2
+
+spring.mvc.view.prefix=/webapp/
+spring.mvc.view.suffix=.html

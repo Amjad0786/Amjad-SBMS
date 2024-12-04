@@ -1,0 +1,25 @@
+package in.amjadit;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import in.amjadit.Entity.Students;
+import in.amjadit.repository.StudentRepository;
+
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
+		
+		StudentRepository bean = context.getBean(StudentRepository.class);
+		
+		Students s = new Students();
+		
+		bean.save(s);
+		
+		System.out.println("Record is Inserted...");
+	}
+
+}

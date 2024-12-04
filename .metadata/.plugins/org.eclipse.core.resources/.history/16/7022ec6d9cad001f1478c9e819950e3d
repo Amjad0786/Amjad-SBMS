@@ -1,0 +1,13 @@
+package in.amjadit.Entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Account {
+	
+	private String holderName;
+	private String branch;
+	
+	private AccountPK accountPk;
+
+}

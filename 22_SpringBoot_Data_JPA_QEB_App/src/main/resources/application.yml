@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: 22_SpringBoot_Data_JPA_QEB_App
+  datasource:
+    url: jdbc:mysql://localhost:3306/Institue_tbls
+    username: root
+    password: amjadkhan@16
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+   

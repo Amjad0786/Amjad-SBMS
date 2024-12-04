@@ -1,0 +1,5 @@
+package in.amjad.repository;
+
+public interface PassportPersonRepository {
+
+}

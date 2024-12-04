@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean id="petrolEngine" class="in.amjadit.bean.PetrolEngine"  scope="prototype"/>
+	<bean id="dieselEngine" class="in.amjadit.bean.DieselEngine" />
+
+	<bean id="car" class="in.amjadit.bean.App">
+		<property name="eng" ref="dieselEngine" />
+		<constructor-arg name = "eng" ref = "petrolEngine"/>
+
+	</bean>
+
+</beans>

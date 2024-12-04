@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: 19_SpringBoot_Data_JPA_FindById_App_1-1
+  datasource:
+    url: jdbc:mysql://localhost:3306/customerinfo
+    username: root
+    password: amjadkhan@16
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    
+  jpa:
+    hibernate:
+     ddl-auto: update
+    
+     show-sql: true
+        
+

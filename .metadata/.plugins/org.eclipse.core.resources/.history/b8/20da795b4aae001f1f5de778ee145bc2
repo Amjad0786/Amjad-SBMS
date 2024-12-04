@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: 30-SpringBoot_Data_JPA__One_To_One_Relations_App-2

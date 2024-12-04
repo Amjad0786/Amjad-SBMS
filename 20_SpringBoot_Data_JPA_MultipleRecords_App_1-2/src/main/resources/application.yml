@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: 20_SpringBoot_Data_JPA_MultipleRecords_App_1-2
+    
+  
+  datasource:
+    url: jdbc:mysql://localhost:3306/Employeeinfo
+    username: root
+    password: amjadkhan@16
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    
+  jpa:
+    hibernate:
+     ddl-auto: update
+    
+     show-sql: true
+        
+
+

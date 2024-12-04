@@ -1,0 +1,66 @@
+package in.amjadit.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import in.amjadit.binding.Student;
+import in.amjadit.entity.StudentEntity;
+import in.amjadit.repository.StudentRepository;
+
+public class StudentController {
+	
+	@Autowired
+	private StudentRepository repo;
+	
+	public String loadForm(Model model) {
+		loadformdata(model);
+		
+		return "index" ;
+	}
+
+	private void loadformdata(Model model) {
+		List<String> coureseslist = new ArrayList<>();
+		coureseslist.add("JAVA");
+		coureseslist.add("DevOps");
+		coureseslist.add("AWS");
+		coureseslist.add("Python");
+		
+		
+		List<String> timingslist = new ArrayList<>();
+		timingslist.add("Morning");
+		timingslist.add("AfterNoon");
+		timingslist.add("Evening");
+		
+		Student student = new Student();
+		
+		model.addAttribute("courses", coureseslist);
+		model.addAttribute("timings", timingslist);
+		model.addAttribute("student", student);
+	}
+	
+	//method to save student form data
+	
+	@PostMapping("/save")
+	public String handleSubmit(Student s , Model model) {
+		System.out.println(s);
+		
+		StudentEntity entity = new StudentEntity();	
+		
+		//copy data from binding obj to entity obj
+		BeanUtils.copyProperties(s, entity);
+		
+		repo.save(entity);
+		model.addAttribute("msg", "Student Save");
+		
+		
+		loadformdata(model);
+		return "index" ;
+		
+	}
+
+}
