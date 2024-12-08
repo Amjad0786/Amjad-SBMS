@@ -1,7 +1,0 @@
-package in.amjadit.repository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface PassportPersonRepository  extends JpaRepository<PassportPersonRepository, Integer>{
-
-}

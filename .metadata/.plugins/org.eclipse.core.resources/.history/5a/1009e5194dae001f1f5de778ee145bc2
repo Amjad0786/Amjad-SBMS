@@ -1,5 +1,0 @@
-package in.amjad.repository;
-
-public interface PersonRepository {
-
-}
