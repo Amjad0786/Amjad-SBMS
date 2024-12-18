@@ -1,4 +1,0 @@
-spring.application.name=33_Web_MVC_Form_App
-
-spring.mvc.view.prefix=/views/
-spring.mvc.view.suffix=.html

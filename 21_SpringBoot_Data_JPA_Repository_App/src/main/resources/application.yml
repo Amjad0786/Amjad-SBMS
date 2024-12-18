@@ -4,8 +4,8 @@ spring:
   
   datasource:
     url: jdbc:mysql://localhost:3306/school_dtls
-    username: root
-    password: amjadkhan@16
+    username: admin
+    password: amjad321
     driver-class-name: com.mysql.cj.jdbc.Driver
     
   jpa:

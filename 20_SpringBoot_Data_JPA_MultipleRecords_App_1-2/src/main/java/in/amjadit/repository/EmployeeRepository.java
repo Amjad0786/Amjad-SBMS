@@ -7,7 +7,8 @@ import org.springframework.stereotype.Repository;
 
 import in.amjadit.Entity.Employee;
 
-@Repository
+
+
 public interface EmployeeRepository extends CrudRepository<Employee, Integer> {
 	
 	/*

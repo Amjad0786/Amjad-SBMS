@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<person>
+	<addr>
+		<city>Ghazipur</city>
+		<country>India</country>
+		<state>UttarPerdesh</state>
+	</addr>
+	<email>amjadkhan44@gmail.com</email>
+	<gender>Male</gender>
+	<id>101</id>
+	<name>Amjad</name>
+</person>
