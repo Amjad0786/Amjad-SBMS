@@ -27,7 +27,7 @@ public class CustomerRestContoller {
 	}
 
 	@PostMapping(
-		value="/customer",
+		value="/customer", 
 		consumes = {"application/xml" , "application/json"},
 		produces = {"text/plain"}
 		)

@@ -20,8 +20,8 @@ public class Application {
 		/*
 		 * List<Employee> byGender = repository.findByGender("Male");
 		 * byGender.forEach(System.out::println);
+		 * 
 		 */
-		
 		/*
 		 * List<Employee> byRankGreaterThenEqual =
 		 * repository.findByRankGreaterThenEqual(100l);

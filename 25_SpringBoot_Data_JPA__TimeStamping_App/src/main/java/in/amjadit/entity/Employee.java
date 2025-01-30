@@ -1,4 +1,4 @@
-package in.amjadit.entity;
+    package in.amjadit.entity;
 
 import java.time.LocalDate;
 import java.time.LocalTime;

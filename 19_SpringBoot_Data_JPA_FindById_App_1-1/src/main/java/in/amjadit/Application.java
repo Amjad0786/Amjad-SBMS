@@ -13,7 +13,9 @@ import in.amjadit.repository.CustomerRepository;
 public class Application {
 
 	public static void main(String[] args) {
+		
 		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
+		
 		CustomerRepository repository = context.getBean(CustomerRepository.class);
 
 		Optional<Customer> optional = repository.findById(201);

@@ -21,6 +21,8 @@ public class Customer {
 	
 	@Column(name = "customer_gender")
 	private String Gender;
+	
+	
 
 	public Integer getId() {
 		return Id;
